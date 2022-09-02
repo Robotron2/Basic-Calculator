@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="container-fluid pt-3">
+        <div class="sub-container">
+            <div class="m-container col-sm-6 col-md-5 col-lg-3 m-auto mt-3">
+                <div class="ti">
+                    <h3>RoboCalc</h3>
+                </div>
+                <input type="text" id="scrN" placeholder="Robotron" class="col-12">
+                <input type="text" id="scrN2" placeholder="ANS" class="col-12 rounded">
+
+                <div class="row divmag">
+
+                    <div class="ms-2 mt-1">
+                        <button onclick="cls()" class=" fkeys btn btn-lg col-3 mt-1 text-warning">AC</button>
+                        <button onclick="backSpace()" class="fkeys btn btn-lg col-3 ">DEL</button>
+                        <button onclick="btnClick('%')" class="fkeys btn btn-lg col-3 ">%</button>
+                        <button onclick="btnClick('/')" class="fkeys btn btn-lg col-2 keys">/</button>
+                    </div>
+                    <!-- <div class="ms-2 mt-4">
+                    <button class="col-3 ac mt-1" onclick="clearAll()">AC</button>
+                    <button class="col-3 sign">()</button>
+                    <button class="col-3 sign" onclick="enterNo('%')">%</button>
+                    <button class="col-2 sign" onclick="enterNo('/')">/</button>
+                </div> -->
+                    <div class="ms-2 mt-4">
+                        <button onclick="sfnClick()" class="btn btn-outline-dark btn-lg col-3 ">sin</button>
+                        <button onclick="fnClick('')" class="btn btn-outline-dark btn-lg col-3 ">cos</button>
+                        <button onclick="fnClick('')" class="btn btn-outline-dark btn-lg col-3 ">tan</button>
+                        <button onclick="fnClick('log')" class="fkeys btn  btn-lg col-2 ">log</button>
+                    </div>
+                    <div class="ms-2 mt-4">
+                        <button onclick="btnClick('7')" class="btn btn-outline-dark btn-lg col-3 ">7</button>
+                        <button onclick="btnClick('8')" class="btn btn-outline-dark btn-lg col-3 ">8</button>
+                        <button onclick="btnClick('9')" class="btn btn-outline-dark btn-lg col-3 ">9</button>
+                        <button onclick="btnClick('*')" class="fkeys btn  btn-lg col-2 ">X</button>
+                    </div>
+                    <div class="ms-2 mt-4">
+                        <button onclick="btnClick('4')" class="btn btn-outline-dark btn-lg col-3 ">4</button>
+                        <button onclick="btnClick('5')" class="btn btn-outline-dark btn-lg col-3 ">5</button>
+                        <button onclick="btnClick('6')" class="btn btn-outline-dark btn-lg col-3 ">6</button>
+                        <button onclick="btnClick('-')" class="fkeys btn btn-lg col-2 ">-</button>
+                    </div>
+                    <div class="ms-2 mt-4">
+                        <button onclick="btnClick('1')" class="btn btn-outline-dark btn-lg col-3 ">1</button>
+                        <button onclick="btnClick('2')" class="btn btn-outline-dark btn-lg col-3 ">2</button>
+                        <button onclick="btnClick('3')" class="btn btn-outline-dark btn-lg col-3 ">3</button>
+                        <button onclick="btnClick('+')" class="fkeys btn  btn-lg col-2 ">+</button>
+                    </div>
+                    <div class="ms-2 mt-4">
+                        <button onclick="btnClick(0)" class="btn btn-outline-dark btn-lg col-3 ">0</button>
+                        <button onclick="btnClick('.')" class="btn btn-outline-dark btn-lg col-3 ">.</button>
+                        <button class="btn btn-lg btn-col-3">EXP</button>
+                        <button style="margin-left: 2%;" onclick="calc()" class="fkeys-e btn btn-lg col-2">=</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
