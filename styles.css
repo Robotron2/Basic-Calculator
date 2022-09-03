@@ -8,39 +8,85 @@
     margin-top: 20px;
     border-radius: 30px;
     padding: 2px;
+    border: 1px solid black;
+    box-shadow: 13px 13px 20px  #5555,
+                -13px 13px 20px #CBCED8
+       
+}
+.contain-all{
+    border: 1px solid black;
+    border-radius: 30px;
 }
 
 .display-exp{
-    background-color: green;
+    /* background-color: green; */
     height: 300px ;
     width: 350px;
     padding: 4% 0 0 0;
     margin-bottom: -10px;
     border-radius: 30px;
+    
 }
 .expression{
     height: 45%;
     width: 98%;
     margin-top: 8%;
-    background-color: aqua;
+    /* background-color: aqua; */
+    border: none;
+    outline: none;
     font-size: 2rem;
     border-radius: 15px;
+    padding: 2px 3px;
 }
 
 .display-ans .answer{
-    width: 98%;
+    width: calc(97% - 10px);
     height: 30%;
     margin-top: -20spx;
-    background-color: blueviolet;
-    font-size: 3rem;
+    /* background-color: blueviolet; */
+    border: none;
+    outline: none;
+    font-size: 2.2rem;
     color: white;
     border-radius: 15px;
+    padding: 10px;
+    text-align: right;
 }
 .button-div{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 30px;
+    margin-top: 10px;
     border: 2px solid red;
     align-items: center;
+    border-radius: 30px;
+}
+.function-keys, .math-functions, .digits, .special-keys{
+    display: flex;
+    padding-left: 13px;
+    
+}
+.function-keys button, .math-functions button, .digits button, .special-keys button{
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+
+.decimal{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+button{
+    background-color: #fff;
+    border: gray;
+      box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+}
+
+button:active{
+      box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 
