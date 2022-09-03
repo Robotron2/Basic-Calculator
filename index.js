@@ -1,33 +1,33 @@
 
 function btnClick(press){
-    if (scrN.value == 0) {
-       scrN.value += press; 
+    if (expressionDisp.value == 0) {
+       expressionDisp.value += press; 
     }
-    else if(scrN.value !=0){
-        scrN.value +=press
+    else if(expressionDisp.value !=0){
+        expressionDisp.value +=press
     }
     // else{
     //     cls();
-    //     scrN.value += press;
+    //     expressionDisp.value += press;
     // }
 }
 
 function calc(){
-    scrN2.value = eval(scrN.value)
-    scrN.value = ""
+    answerDisp.value = eval(expressionDisp.value)
+    // expressionDisp.value = ""
 }
 function cls(){
-    scrN.value = "";
-    scrN2.value = "";
+    expressionDisp.value = "";
+    answerDisp.value = "";
 }
 function backSpace(){
-    scrN.value = scrN.value.slice(0, - 1);
+    expressionDisp.value = expressionDisp.value.slice(0, - 1);
 }
 
 function sfnClick(){
-    // scrN.value += spress;
-    scrN.value += btnClick('sin(')
-    scrN2.value = sin(scrN.value)
+    // expressionDisp.value += spress;
+    expressionDisp.value += btnClick('sin(')
+    answerDisp.value = sin(expressionDisp.value)
 }
 
 
