@@ -36,4 +36,11 @@
     color: white;
     border-radius: 15px;
 }
+.button-div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    border: 2px solid red;
+    align-items: center;
+}
 
